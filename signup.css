@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgba(255, 111, 97, 0.8), rgba(255, 160, 122, 0.8)), url('https://www.alll.com/wp-content/uploads/2019/01/signup-background-1024x477.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(242, 103, 127);
+    color: white;
+}
+
+.home-page-button, .link-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 50px); 
+}
+
+.left-side {
+    width: 50%;
+    background-color: #f2f2f2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-side img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.left-side .text {
+    position: absolute;
+    bottom: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.right-side {
+    width: 50%;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-container h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #FF6F61;
+}
+
+.form-container p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.form-container a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.google-signup {
+    background-color: #DB4437;
+    color: white;
+}
+
+.instagram-signup {
+    background-color: #C13584;
+    color: white;
+}
+
+.divider {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #999;
+    position: relative;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    height: 1px;
+    width: 30%;
+    background: #999;
+    position: absolute;
+    top: 50%;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form small {
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.create-account {
+    padding: 10px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}

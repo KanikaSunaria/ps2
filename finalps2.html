@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signup.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #cd0e64);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f75490;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px orangered;
+        }
+
+        header h1 {
+            font-family: 'Great Vibes',cursive;
+            font-size: 2rem;
+            color: rgba(20, 48, 187, 0.843);
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        .home-page-button,
+        .link-button {
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 15px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-page-button:hover,
+        .link-button:hover {
+            background-color: #e69500;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .left-side {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .left-side img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-side .text {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #000000;
+            margin-top: 10px;
+        }
+
+        .right-side {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-container h1 {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 2rem;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .form-container p {
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .form-container a {
+            color: #ffa500;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .form-container a:hover {
+            text-decoration: underline;
+        }
+
+        .google-signup,
+        .instagram-signup {
+            display: inline-block;
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+            background-color: #4285F4;
+            color: white;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .google-signup:hover {
+            background-color: #357ae8;
+        }
+
+        .instagram-signup {
+            background-color: #f63b79;
+        }
+
+        .instagram-signup:hover {
+            background-color: #c12758;
+        }
+
+        .divider {
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #cccccc;
+            line-height: 0.1em;
+            margin: 20px 0;
+            color: #000000;
+        }
+
+        .divider span {
+            background: #fffaf0;
+            padding: 0 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+
+        small {
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .create-account {
+            background-color: #ffa500;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 15px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .create-account:hover {
+            background-color: #e69500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Karmel - Your beauty our passion!</h1>
+        <nav>
+            <button class="home-page-button" onclick="location.href='index.html'">Home</button>
+            <button class="link-button" onclick="location.href='about.html'">About</button>
+            <button class="link-button" onclick="location.href='contact.html'">Contact</button>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left-side">
+            <img src="https://cleanbeautycoach.com/wp-content/uploads/2023/12/Makeup-Art-5-1-683x1024.jpg" alt="Fashion Model">
+            <div class="text">Styles for You Everyday</div>
+        </div>
+        <div class="right-side">
+            <div class="form-container">
+                <h1>Get Started!</h1>
+                <p>Already have an account? <a href="login.html">Log In</a></p>
+                <a href="https://accounts.google.com/signup" class="google-signup">Sign Up with Google</a>
+                <a href="https://www.instagram.com/accounts/emailsignup/" class="instagram-signup">Sign Up with Instagram</a>
+                <div class="divider"><span>or</span></div>
+                <form action="login.html" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="password" name="password" placeholder="Create your Password" required>
+                    <small>Must be at least 8 characters!!</small>
+                    <button type="submit" class="create-account">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
